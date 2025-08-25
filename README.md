@@ -52,6 +52,15 @@ project-root/
 ```
 ---
 
+##If You Have Docker Installed ou Can Run Directly Just By running Command
+
+docker-compose up --build
+
+It Will Run both services
+Then access:
+Frontend: http://localhost:3000
+Backend: http://localhost:8000
+
 ## Prerequisites
 
 * Python 3.11
