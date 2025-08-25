@@ -1,17 +1,6 @@
-services:
-  db:
-    image: postgres:16
-    container_name: myblog-db
-    restart: always
-    environment:
-      POSTGRES_USER: ${DB_USER}
-      POSTGRES_PASSWORD: ${DB_PASSWORD}
-      POSTGRES_DB: ${DB_NAME}
-    ports:
-      - "5432:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
 
+
+services:
   backend:
     build: ./backend
     container_name: myblog-backend
@@ -21,10 +10,7 @@ services:
       - ./backend:/app
     ports:
       - "8000:8000"
-    depends_on:
-      - db
-    env_file:
-      - .env
+
 
   frontend:
     build: ./frontend
@@ -35,6 +21,3 @@ services:
       - "3000:3000"
     depends_on:
       - backend
-
-volumes:
-  postgres_data:
