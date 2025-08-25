@@ -4,12 +4,12 @@ FROM python:3.11-slim
 # Set working directory
 WORKDIR /backend
 
-# Install dependencies
+# Copy requirements.txt from the root and install dependencies
 COPY requirements.txt .
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
-# Copy project files
-COPY . .
+# Copy the blogpost directory contents into the working directory
+COPY blogpost/ .
 
 # Expose port
 EXPOSE 8000
