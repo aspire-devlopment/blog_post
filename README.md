@@ -10,16 +10,35 @@ This is a **full-stack web application** built with **React** for the frontend a
 
 ## Project Structure
 
-```
 project-root/
-├─ backend/               # Django backend
-│  ├─ blogpost/           # Django project folder
+├─ backend/                    # Django backend
+│  ├─ blogpost/                # Django project folder
 │  │  ├─ settings.py
 │  │  ├─ urls.py
 │  │  └─ wsgi.py
 │  ├─ manage.py
-│  └─ requirements.txt
-├─ frontend/blogpostui/   # React frontend
+│  ├─ requirements.txt
+│  ├─ api/                     # Django app for APIs
+│  │  ├─ models/               # All models here
+│  │  │  ├─ __init__.py
+│  │  │  ├─ user.py
+│  │  │  └─ blog.py
+│  │  ├─ views/                # All views here
+│  │  │  ├─ __init__.py
+│  │  │  ├─ auth.py
+│  │  │  └─ blog_views.py
+│  │  ├─ services/             # Business logic / helpers
+│  │  │  ├─ __init__.py
+│  │  │  └─ blog_service.py
+│  │  ├─ middleware/           # JWT, logging, etc.
+│  │  │  ├─ __init__.py
+│  │  │  ├─ jwt_middleware.py
+│  │  │  └─ logging_middleware.py
+│  │  ├─ serializers.py
+│  │  └─ urls.py
+│  ├─ logs/                    # log files
+│  └─ media/                   # uploaded images
+├─ frontend/blogpostui/        # React frontend
 │  ├─ package.json
 │  ├─ src/
 │  │  ├─ App.jsx
@@ -30,7 +49,7 @@ project-root/
 │  └─ public/
 │      └─ index.html
 └─ README.md
-```
+
 
 ---
 
