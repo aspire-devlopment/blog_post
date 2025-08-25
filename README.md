@@ -10,7 +10,7 @@ This is a **full-stack web application** built with **React** for the frontend a
 
 ## Project Structure
 
-'project-root/
+'''project-root/
 ├─ backend/                    # Django backend
 │  ├─ blogpost/                # Django project folder
 │  │  ├─ settings.py
@@ -50,7 +50,7 @@ This is a **full-stack web application** built with **React** for the frontend a
 │      └─ index.html
 └─ README.md'
 
-
+'''
 ---
 
 ## Prerequisites
