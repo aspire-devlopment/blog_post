@@ -110,7 +110,7 @@ npm start
 
 * React runs on `http://localhost:3000/` by default
 * React development server supports hot-reloading
-* All frontend requests to `/api/...` should be proxied to Django backend (can configure `proxy` in `package.json`)
+* All frontend requests to `/api/...` should be proxied to Django backend 
 
 ---
 
@@ -128,7 +128,7 @@ npm run build
 
 * User registration and login with custom JWT authentication
 * Create, read, update, and delete blog posts
-* React SPA with routing for Home, Dashboard, and Post Details pages
+* React SPA with routing for Home, Dashboard, and Post Details pages along with paginations
 * Django REST Framework provides secure API endpoints
 * Passwords are hashed before storing in the database
 * JWT tokens expire after 1 hour for security
