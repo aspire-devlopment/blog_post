@@ -3,7 +3,7 @@
 This is a **full-stack web application** built with **React** for the frontend and **Django** for the backend. It is a simple blogging platform where users can register, login, create, edit, and view blog posts.
 
 * **Frontend:** React handles all user interfaces, routing, and state management. The frontend is built as a Single Page Application (SPA) using **React Router** for navigation and can be served by Django in production.
-* **Backend:** Django REST Framework (DRF) provides API endpoints for all CRUD operations on posts and user management.
+* **Backend:** Django provides API endpoints for all CRUD operations on posts and user management.
 * **Authentication:** Custom JWT-based authentication is implemented to secure API endpoints. Users register with email/phone and password, which is hashed before storing in the database. Upon successful login, a JWT token is issued with a 1-hour expiration.
 
 ---
