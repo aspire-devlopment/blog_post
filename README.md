@@ -137,5 +137,4 @@ npm run build
 
 ## Notes
 
-* React routing is handled by React Router. Django serves `index.html` for all frontend routes.
 * API endpoints and frontend routes are separate, allowing SPA behavior without page reloads.
