@@ -9,7 +9,7 @@ This is a **full-stack web application** built with **React** for the frontend a
 ---
 
 ## Project Structure
-
+```
 project-root/
 ├─ backend/                    # Django backend
 │  ├─ blogpost/                # Django project folder
@@ -49,7 +49,7 @@ project-root/
 │  └─ public/
 │      └─ index.html
 └─ README.md
-
+```
 ---
 
 ## Prerequisites
